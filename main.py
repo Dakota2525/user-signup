@@ -28,10 +28,10 @@ def sign_up():
    # email = escape(email, quote=True)
 
 
-    if " " or len(username) <3 or len(username) >20 in username: 
+    if " " in username or len(username) <3 or len(username) >20: 
         username_error = "Invalid username"
         username = ""
-    if password != " " or len(password) <3 or len(password) >20 in password:
+    if password != " " in password or len(password) <3 or len(password) >20:
         password_error = "Invalid password"
         password = ""
     if verify =="" or verify !=password:
